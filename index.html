@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26.05 Molodshyi</title>
+    <style>
+        .container {
+            background-color: #DDDDDD;
+            display: grid;
+            grid-template-areas: 
+                'sub-left sub-right sub-right sub-right sub-right sub-right'
+                'left-menu main-area main-area main-area main-area main-area'
+                'bottom-left bottom-left bottom-left bottom-left bottom-left bottom-right';
+            text-align: center;
+            font-size: 24px;
+        }
+        .sub-left {
+            grid-area: sub-left;
+            background-color: red;
+            height: 50px;
+        }
+        .sub-right {
+            grid-area: sub-right;
+            background-color: orange;
+        }
+        nav {
+            grid-area: left-menu;
+            background-color: blue;
+            height: 500px;
+        }
+        main {
+            grid-area: main-area;
+            background-color: yellow;
+        }
+        footer {
+            grid-area: footer;
+            background-color: green;
+            height: 50px;
+        }
+        .container header, hgroup, nav, main, aside, footer{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .blok1 {
+            grid-area: header;
+            position: absolute;
+            height: 75px;
+            width: 350px;
+            top: 150px;
+            left: 450px;
+            background-color: magenta;
+            z-index: 1;
+        }
+        .bottom-left {
+            grid-area: bottom-left;
+            background-color: green;
+            height: 50px;
+        }
+        .bottom-right {
+            grid-area: bottom-right;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <hgroup class="sub-left"></hgroup>
+        <hgroup class="sub-right"></hgroup>
+        <nav></nav>
+        <main></main>
+        <hgroup class="blok1"></hgroup>
+        <hgroup class="bottom-left"></hgroup>
+        <hgroup class="bottom-right"></hgroup>
+    </div>
+</div>
+</body>
+</html>
